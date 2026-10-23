@@ -1,0 +1,8 @@
+// 26.3	-999999999-01-01T00:00:00	TutorialMod/Model Definitions
+6a728eda7238fed6b027e801e464250c3f3144ba assets/tutorialmod/blockstates/pink_garnet_block.json
+75139f101fc53a173036888496a359bd89e86a16 assets/tutorialmod/items/pink_garnet.json
+083ea04c2e0adeda2373718a22d3ae8268fe7f6a assets/tutorialmod/items/pink_garnet_block.json
+d927a4ca134f20c84c4b96efac7b41fc206bf900 assets/tutorialmod/items/raw_pink_garnet.json
+37d814e2e0356a246af16618c42984b84d9e2ed9 assets/tutorialmod/models/block/pink_garnet_block.json
+32305f6ce3ee61546017e60ba255e791e8997032 assets/tutorialmod/models/item/pink_garnet.json
+1de8986c7f889df43a340003b65d2a4a43bc2348 assets/tutorialmod/models/item/raw_pink_garnet.json
