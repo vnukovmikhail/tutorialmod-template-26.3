@@ -3,6 +3,7 @@ package org.k7osx.tutorialmod.block;
 import java.util.function.Function;
 
 import org.k7osx.tutorialmod.TutorialMod;
+import org.k7osx.tutorialmod.block.custom.CheeseBlock;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -18,6 +19,10 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 public class ModBlocks {
   public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block",
       properties -> new Block(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+  public static final Block CHEESE_BLOCK = registerBlock("cheese_block",
+      properties -> new CheeseBlock(
+          properties.strength(2f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)));
 
   private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
     Block toRegister = function.apply(BlockBehaviour.Properties.of()

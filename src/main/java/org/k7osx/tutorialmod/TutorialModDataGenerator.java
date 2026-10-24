@@ -2,6 +2,7 @@ package org.k7osx.tutorialmod;
 
 import org.k7osx.tutorialmod.datagen.ModBlockLootTableProvider;
 import org.k7osx.tutorialmod.datagen.ModBlockTagsProvider;
+import org.k7osx.tutorialmod.datagen.ModEquipmentAssetProvider;
 import org.k7osx.tutorialmod.datagen.ModModelProvider;
 import org.k7osx.tutorialmod.datagen.ModRecipeProvider;
 
@@ -17,5 +18,6 @@ public class TutorialModDataGenerator implements DataGeneratorEntrypoint {
     pack.addProvider(ModBlockTagsProvider::new);
     pack.addProvider(ModBlockLootTableProvider::new);
     pack.addProvider(ModRecipeProvider::new);
+    pack.addProvider(ModEquipmentAssetProvider::new);
   }
 }

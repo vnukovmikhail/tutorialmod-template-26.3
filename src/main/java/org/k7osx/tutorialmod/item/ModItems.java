@@ -3,6 +3,8 @@ package org.k7osx.tutorialmod.item;
 import java.util.function.Function;
 
 import org.k7osx.tutorialmod.TutorialMod;
+import org.k7osx.tutorialmod.food.ModFoods;
+import org.k7osx.tutorialmod.item.custom.ChiselItem;
 
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
@@ -12,10 +14,22 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.equipment.ArmorType;
 
 public class ModItems {
   public static final Item PINK_GARNET = registerItem("pink_garnet", Item::new);
   public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", Item::new);
+
+  public static final Item CHISEL = registerItem("chisel", properties -> new ChiselItem(properties.durability(32)));
+
+  public static final Item CHEESE = registerItem("cheese",
+      properties -> new Item(properties.food(ModFoods.CHEESE, ModFoods.CHEESE_CONSUMABLE)));
+
+  public static final Item GARNET_HELMET = registerItem("garnet_helmet",
+      properties -> new Item(properties.humanoidArmor(ModArmorMaterials.GARNET_ARMOR_MATERIAL, ArmorType.HELMET)));
+
+  public static final Item GARNET_CHESTPLATE = registerItem("garnet_chestplate",
+      properties -> new Item(properties.humanoidArmor(ModArmorMaterials.GARNET_ARMOR_MATERIAL, ArmorType.CHESTPLATE)));
 
   private static Item registerItem(String name, Function<Item.Properties, Item> function) {
     return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, name),

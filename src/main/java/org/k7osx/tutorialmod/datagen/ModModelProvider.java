@@ -1,5 +1,7 @@
 package org.k7osx.tutorialmod.datagen;
 
+import java.util.Map;
+
 import org.k7osx.tutorialmod.block.ModBlocks;
 import org.k7osx.tutorialmod.item.ModItems;
 
@@ -17,11 +19,25 @@ public class ModModelProvider extends FabricModelProvider {
   @Override
   public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
     blockModelGenerators.createTrivialCube(ModBlocks.PINK_GARNET_BLOCK);
+    blockModelGenerators.createTrivialCube(ModBlocks.CHEESE_BLOCK);
   }
 
   @Override
   public void generateItemModels(ItemModelGenerators itemModelGenerators) {
     itemModelGenerators.generateFlatItem(ModItems.PINK_GARNET, ModelTemplates.FLAT_ITEM);
     itemModelGenerators.generateFlatItem(ModItems.RAW_PINK_GARNET, ModelTemplates.FLAT_ITEM);
+    itemModelGenerators.generateFlatItem(ModItems.CHISEL, ModelTemplates.FLAT_HANDHELD_ITEM);
+    itemModelGenerators.generateFlatItem(ModItems.CHEESE, ModelTemplates.FLAT_ITEM);
+
+    itemModelGenerators.generateTrimmableItem(
+        ModItems.GARNET_HELMET,
+        ItemModelGenerators.TRIM_PREFIX_HELMET,
+        false,
+        Map.of());
+    itemModelGenerators.generateTrimmableItem(
+        ModItems.GARNET_CHESTPLATE,
+        ItemModelGenerators.TRIM_PREFIX_CHESTPLATE,
+        false,
+        Map.of());
   }
 }

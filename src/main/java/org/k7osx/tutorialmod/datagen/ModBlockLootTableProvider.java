@@ -30,6 +30,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
     // add(ModBlocks.PINK_GARNET_BLOCK, createOreDrop(ModBlocks.PINK_GARNET_BLOCK,
     // ModItems.PINK_GARNET));
     add(ModBlocks.PINK_GARNET_BLOCK, createMultipleOreDrops(ModBlocks.PINK_GARNET_BLOCK, ModItems.PINK_GARNET, 1, 3));
+    dropSelf(ModBlocks.CHEESE_BLOCK);
   }
 
   public LootTable.Builder createMultipleOreDrops(final Block block, Item item, int minDrops, int maxDrops) {

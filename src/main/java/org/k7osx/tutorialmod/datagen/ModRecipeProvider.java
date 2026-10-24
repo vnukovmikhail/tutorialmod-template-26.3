@@ -13,6 +13,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.ItemLike;
@@ -55,6 +56,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             ModItems.PINK_GARNET,
             RecipeCategory.DECORATIONS,
             ModBlocks.PINK_GARNET_BLOCK);
+
+        shaped(RecipeCategory.COMBAT, ModItems.GARNET_HELMET)
+            .define('L', Items.LEATHER)
+            .define('G', ModItems.PINK_GARNET)
+            .pattern("LGL")
+            .pattern("L L")
+            .unlockedBy(getHasName(ModItems.PINK_GARNET), has(ModItems.PINK_GARNET))
+            .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.GARNET_CHESTPLATE)
+            .define('L', Items.LEATHER)
+            .define('G', ModItems.PINK_GARNET)
+            .pattern("L L")
+            .pattern("LGL")
+            .pattern(" G ")
+            .unlockedBy(getHasName(ModItems.PINK_GARNET), has(ModItems.PINK_GARNET))
+            .save(output);
       }
     };
   }

@@ -21,7 +21,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
   protected void addTags(HolderLookup.Provider registries) {
     builder(BlockTags.MINEABLE_WITH_PICKAXE)
         .add(ResourceKey.create(Registries.BLOCK,
-            Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, "pink_garnet_block")));
+            Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, "pink_garnet_block")))
+        .add(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, "cheese_block")));
 
     builder(BlockTags.NEEDS_IRON_TOOL)
         .add(ResourceKey.create(Registries.BLOCK,
