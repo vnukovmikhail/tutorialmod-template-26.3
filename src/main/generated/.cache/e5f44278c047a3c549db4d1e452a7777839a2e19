@@ -1,3 +1,4 @@
 // 26.3	-999999999-01-01T00:00:00	TutorialMod/Tags for minecraft:block
-cc9e35e02b5bbee8314da027601313a40ced6e44 data/minecraft/tags/block/mineable/pickaxe.json
-ae14f02e237066fbc9d8086f9cb193b08e45543e data/minecraft/tags/block/needs_iron_tool.json
+ddb13e293609925173254cd04241d471156ae4f6 data/minecraft/tags/block/crops.json
+10e4d2ea90501ebaa950d2aeaf95b9b2d29cc679 data/minecraft/tags/block/mineable/pickaxe.json
+a5bf111647e17f11ad2f5af06176718d8db44a8a data/minecraft/tags/block/needs_iron_tool.json
