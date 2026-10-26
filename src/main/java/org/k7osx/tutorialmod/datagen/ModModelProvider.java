@@ -24,6 +24,8 @@ public class ModModelProvider extends FabricModelProvider {
     blockModelGenerators.createTrivialCube(ModBlocks.CHEESE_BLOCK);
 
     blockModelGenerators.createCropBlock(ModBlocks.STRANGE_CROP, StrangeCropBlock.AGE, 0, 1, 2, 3, 4, 5);
+
+    blockModelGenerators.createNonTemplateModelBlock(ModBlocks.PEDESTAL_BLOCK);
   }
 
   @Override

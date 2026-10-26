@@ -34,6 +34,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
     // ModItems.PINK_GARNET));
     add(ModBlocks.PINK_GARNET_ORE, createMultipleOreDrops(ModBlocks.PINK_GARNET_BLOCK, ModItems.RAW_PINK_GARNET, 1, 3));
     dropSelf(ModBlocks.CHEESE_BLOCK);
+    dropSelf(ModBlocks.PEDESTAL_BLOCK);
 
     this.add(ModBlocks.STRANGE_CROP, this.createCropDrops(
         ModBlocks.STRANGE_CROP, ModItems.CHEESE, ModItems.STRANGE_SEEDS,

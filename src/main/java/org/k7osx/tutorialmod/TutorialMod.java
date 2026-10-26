@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.Identifier;
 
 import org.k7osx.tutorialmod.block.ModBlocks;
+import org.k7osx.tutorialmod.block.entity.ModBlockEntities;
 import org.k7osx.tutorialmod.creativemodetab.ModCreativeModeTabs;
 import org.k7osx.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
@@ -21,6 +22,7 @@ public class TutorialMod implements ModInitializer {
     ModCreativeModeTabs.registerCreativeModeTabs();
     ModItems.registerModItems();
     ModBlocks.registerModBlocks();
+    ModBlockEntities.registerBlockEntities();
   }
 
   public static Identifier id(String path) {

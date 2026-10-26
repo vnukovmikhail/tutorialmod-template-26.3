@@ -45,6 +45,7 @@ public class ModCreativeModeTabs {
             output.accept(ModBlocks.PINK_GARNET_BLOCK);
             output.accept(ModBlocks.PINK_GARNET_ORE);
             output.accept(ModBlocks.CHEESE_BLOCK);
+            output.accept(ModBlocks.PEDESTAL_BLOCK);
           })
           .build());
 

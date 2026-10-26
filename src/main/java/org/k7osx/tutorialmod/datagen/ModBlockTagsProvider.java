@@ -24,7 +24,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
             Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, "pink_garnet_block")))
         .add(ResourceKey.create(Registries.BLOCK,
             Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, "pink_garnet_ore")))
-        .add(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, "cheese_block")));
+        .add(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, "cheese_block")))
+        .add(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, "pedestal")));
 
     builder(BlockTags.NEEDS_IRON_TOOL)
         .add(ResourceKey.create(Registries.BLOCK,

@@ -1,5 +1,6 @@
 // 26.3	-999999999-01-01T00:00:00	TutorialMod/Block Loot Tables
 f5b5ba0239c53fe6a8d088d1e73b503a5bfde6b4 data/tutorialmod/loot_table/blocks/cheese_block.json
+83e336b02eeb4eb9bbcdda916c7110b3e0f6f098 data/tutorialmod/loot_table/blocks/pedestal.json
 d2c8d5a034caa7d20388356591715d53178c9fc0 data/tutorialmod/loot_table/blocks/pink_garnet_block.json
 9cefad9f02e36655bab7311cb735dc84b4c6ffd5 data/tutorialmod/loot_table/blocks/pink_garnet_ore.json
 23eb7faedd34c95c35fe2de7cb9039b95f2ae387 data/tutorialmod/loot_table/blocks/strange_crop.json

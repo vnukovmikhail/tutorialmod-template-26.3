@@ -4,6 +4,7 @@ import java.util.function.Function;
 
 import org.k7osx.tutorialmod.TutorialMod;
 import org.k7osx.tutorialmod.block.custom.CheeseBlock;
+import org.k7osx.tutorialmod.block.custom.PedestalBlock;
 import org.k7osx.tutorialmod.block.custom.StrangeCropBlock;
 
 import net.minecraft.core.Registry;
@@ -29,9 +30,12 @@ public class ModBlocks {
       properties -> new CheeseBlock(
           properties.strength(2f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)));
 
-  public static final Block STRANGE_CROP = registerBlock("strange_crop",
+  public static final Block STRANGE_CROP = registerBlockWithoutItem("strange_crop",
       properties -> new StrangeCropBlock(
           properties.noCollision().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.POPPED)));
+
+  public static final Block PEDESTAL_BLOCK = registerBlock("pedestal",
+      properties -> new PedestalBlock(properties.strength(3f).requiresCorrectToolForDrops()));
 
   private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
     Block toRegister = function.apply(BlockBehaviour.Properties.of()
