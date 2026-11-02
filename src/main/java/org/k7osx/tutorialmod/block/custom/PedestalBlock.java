@@ -68,7 +68,7 @@ public class PedestalBlock extends BaseEntityBlock {
         pedestalBlockEntity.clearContent();
 
         if (!player.getInventory().add(stackOnPedestal)) {
-          player.drop(stackOnPedestal, false, Prediction.PREDICTED);
+          player.drop(stackOnPedestal, false, Prediction.SERVER_ONLY);
         }
         level.playSound(player, pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1f, 1f);
       }
